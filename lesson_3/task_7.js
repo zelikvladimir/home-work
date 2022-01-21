@@ -1,6 +1,7 @@
-console.log(getDivisors(12));
+console.log(getDivisors(0));
 
 function getDivisors(num) {
+    if (num === 0) throw new Error('parameter can\'t be a 0');
     if (typeof num !== 'number') throw new Error('parameter type is not Number');
 
     let divisors = [];
